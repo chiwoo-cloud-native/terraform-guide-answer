@@ -1,3 +1,3 @@
 # terraform-guide-answer
 
-## [Terraform Basic HandsOn](./lab-102/handson/answer.md) 
+## [Terraform Basic HandsOn](./lab-102/answer.md) 
