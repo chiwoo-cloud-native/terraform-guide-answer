@@ -1,5 +1,18 @@
 # apple
 
+## Git
+```
+git clone https://github.com/chiwoo-cloud-native/terraform-guide-answer.git
+
+git config --local user.name symplesims
+git config --local user.email symplesims@gmail.com
+
+cd terraform-guide-answer/lab-203/apple
+
+# PDIR 환경변수로 apple 디렉토리 경로 저장
+export PDIR=$(pwd)
+```
+
 ## Init
 
 인터넷 서비스를 위한 도메인을 발급 합니다.
@@ -9,6 +22,9 @@
 - 초기 구성을 위해 [init](./init/) 폴더에서 Elastic-IP 및 Key Pair 를 프로비저닝 합니다. 관리 콘솔을 통해 매뉴얼 구성을 할 수도 있습니다. 
 
 ```
+# init 초기 구성 프로젝트 경로 이동 
+cd $PDIR/init
+
 terraform init
 
 terraform plan
@@ -23,6 +39,9 @@ terraform apply
 
 ### 워크스페이스 생성 
 ```
+# resources 초기 구성 프로젝트 경로 이동 
+cd $PDIR/resources
+
 terraform workspace new dev
 terraform workspace new prd
 ```
