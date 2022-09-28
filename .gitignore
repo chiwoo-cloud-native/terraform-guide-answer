@@ -30,6 +30,8 @@ override.tf.json
 
 **/.terraform.lock.hcl
 **/terraform.tfstate.backup
+**/.terraform.tfstate.lock.info
+**/apple-keypair.pem
 
 # IDEA
 /.idea/

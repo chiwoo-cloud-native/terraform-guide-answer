@@ -1,0 +1,5 @@
+project     = "apple"
+env         = "Production"
+region_code = "an2"
+cidr        = "172.10"
+owner       = "noops@apple.ml"
