@@ -1,0 +1,19 @@
+#!/bin/bash
+sudo apt-get update
+sudo apt-get install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+sudo bash -c cat > /tmp/index.html <<EOF
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>portal</title>
+  </html>
+  <body>
+    <h1>Hello! This is portal application.</h1>
+  </body>
+</html>
+EOF
+
+sudo cp /tmp/index.html /var/www/html/index.html
