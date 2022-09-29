@@ -2,6 +2,16 @@
 
 <br>
 
+## Git
+```shell
+git clone https://github.com/chiwoo-cloud-native/terraform-guide-answer.git
+
+cd terraform-guide-answer
+
+git config --global user.email "symplesims@gmail.com"
+git config --global user.name "symplesims"
+```
+
 ## [Lab 102. Terraform Basic HandsOn](./lab-102/handson.md) 
 
 <br>

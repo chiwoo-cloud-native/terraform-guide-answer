@@ -2,14 +2,14 @@
 
 ## Q1. 프로바이더를 정의 하세요.
 
-- Terraform 버전을 1.2.1 에서만 동작하도록 정의 하세요.
+- Terraform 버전을 1.2.5 버전과 같거나 상위 버전에서만 동작하도록 정의 하세요.
 - AWS 프로바이더를 추가 하고, 버전은 "4.4.0" 과 크거나 같아야 합니다.
 - terra 프로파일을 사용하며, '서울' 리전을 액세스 하여야
 합니다.
 
 ```hcl
 terraform {
-  required_version = "= 1.2.1"
+  required_version = ">= 1.2.5"
 
   required_providers {
     aws = {
