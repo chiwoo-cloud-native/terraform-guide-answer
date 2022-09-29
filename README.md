@@ -7,6 +7,8 @@
 git clone https://github.com/chiwoo-cloud-native/terraform-guide-answer.git
 
 cd terraform-guide-answer
+export PDIR=$(pwd)
+echo $PDIR
 
 git config --global user.email "symplesims@gmail.com"
 git config --global user.name "symplesims"

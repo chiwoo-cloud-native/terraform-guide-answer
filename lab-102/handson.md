@@ -35,6 +35,14 @@ provider "aws" {
 
 [Q2-bastion](./q2-bastion/)
 
+```shell
+cd $PDIR/lab-102/q2-bastion/
+
+terraform init
+
+terraform plan
+```
+
 
 ## Q3. aws_instance 리소스 속성을 변경 하세요.
 
@@ -44,8 +52,23 @@ provider "aws" {
 [Q3-bastion](./q3-bastion/)
 
 
+```shell
+cd $PDIR/lab-102/q3-bastion/
+
+terraform init
+
+terraform plan -var="disable_api_termination=true"
+```
 
 ## Q4. 가장 최신의 ubuntu `aws_ami` 데이터 소스를 정의 하고, output 으로 ami_id 를 출력 하세요.
 
 [Q4-ami](./q4-ami/)
+
+```shell
+cd $PDIR/lab-102/q4-ami/
+
+terraform init
+
+terraform plan
+```
 
